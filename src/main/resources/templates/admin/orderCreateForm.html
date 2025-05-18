@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+  <head th:replace="fragments/head :: heading(::title, ~{}, ~{})">
+    <title th:text="${title}">Admin-home</title>
+  </head>
+
+  <body class="nav-md">
+    <div class="container body">
+      <div class="main_container">
+<!--begin sidebar -->
+        <div th:replace="fragments/menu :: sidebar" class="col-md-3 left_col">
+
+        </div>
+<!-- end sidebar -->
+
+        <!-- top navigation -->
+        <div class="top_nav" th:replace="fragments/topnavigation :: topnavigation">
+
+        </div>
+        <!-- end top navigation -->
+
+        <!-- begin page content -->
+        <div class="right_col" role="main">
+       
+
+
+        <!-- end page content -->
+
+        <!-- begin footer content -->
+        <footer th:replace="fragments/footer :: footer"></footer>
+        <!-- end footer content -->
+      </div>
+    </div>
+
+
+    <script th:replace="fragments/scripts :: scripts"></script>
+
+
+  </body>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>User Signup</title>
+    <link rel="stylesheet" href="/webjar/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <form action="" th:action="@{/web/users/rider/signup}">
+        <div style="form-group">
+            Name in english: *
+            <input type="text" />
+        </div>
+        <div>
+            Name in Arabic: *
+            <input type="text" />
+        </div>
+        <div>
+            Address: *
+            <input type="text" />
+        </div>
+        <div>
+            Phone Number: *
+            <input type="text" />
+        </div>
+        <div>
+            Email:
+            <input type="email" />
+        </div>
+        <div>
+            Image:
+            <input type="file" />
+        </div>
+        <div>
+            Password:*
+            <input type="password" />
+        </div>
+        <div>
+            Confirm Password:*
+            <input type="password" />
+        </div>
+        <div>
+            <input type="submit" />
+        </div>
+
+    </form>
+</body>
+</html>

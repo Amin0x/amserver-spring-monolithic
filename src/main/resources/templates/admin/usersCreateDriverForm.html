@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" type="text/css" href="/webjars/bootstrap/5.2.3/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="/css/style.css">
+    <script src="/webjars/jquery/3.6.3/jquery.min.js"></script>
+</head>
+<body>
+    <form action="" th:action="@{/web/users/driver/signup}" class="container">
+        <div class="row">
+            <div class="col-12">
+                Name in english: *
+                <input type="text" placeholder="Name in english*" />
+            </div>
+            <div class="col-12">
+                Name in Arabic: *
+                <input type="text" placeholder="Name in Arabic*"/>
+            </div>
+            <div class="col-12">
+                Address: *
+                <input type="text" placeholder="Address*"/>
+            </div>
+            <div class="col-12">
+                Phone Number: *
+                <input type="text" placeholder="Phone Number*"/>
+            </div>
+            <div class="col-12">
+                Email:
+                <input type="email" placeholder="Email"/>
+            </div>
+            <div class="col-12">
+                Image:
+                <input type="file" />
+            </div>
+            <div class="col-12">
+                Password:*
+                <input type="password" placeholder="Password*"/>
+            </div>
+            <div class="col-12">
+                Confirm Password:*
+                <input type="password" />
+            </div>
+            <div class="col-12"><input type="submit" /></div>
+        </div>
+
+    </form>
+</body>
+</html>
